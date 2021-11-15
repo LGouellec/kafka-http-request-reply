@@ -15,7 +15,7 @@ Mock HTTP Service return :
 cd tools/
 docker-compose build
 docker-compose up -d
-# Wait some seconds stack is UP, before deploying kafka connector
+# Wait some seconds, before deploying kafka connector
 ./deploy-connector./sh
 ```
 
@@ -30,7 +30,7 @@ KEY2:VALUE2 ....
 ```
 
 ``` bash
-# In parrallel, some ack-status topics, you can also use AKHQ (http://localhost:8082) to display topics
+# In parrallel, consume ack-status topics (you can also use AKHQ http://localhost:8082) and see ack messages
 docker exec -it base /bin/sh
 kafka-console-consumer --bootstrap-server kafka:29092 --topic ack-status --from-beginning
 ...
