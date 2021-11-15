@@ -3,7 +3,7 @@ Kafka Http Connector Request/Reply use case
 
 ## Use case
 
-<img src="./docs/workflow5 (1).jpg">
+<img src="./docs/workflow5.jpg">
 
 Mock HTTP Service return :
 - 30% HTTP 400 Error code, 200 or 201 otherwise.
